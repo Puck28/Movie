@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./src/types", "./types"],
+    "target": "ES6",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    "lib": ["ES6", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowJs": true,
+    "rootDir": "src",
+    "baseUrl": "src",
+    "paths": { "src/*": ["./src/*"] },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "strictNullChecks": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
